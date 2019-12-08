@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "21d7bd69-41d4-40f5-8617-354183775946",
+		"name": "Simple API Testing Queries",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Multiple different trademark words",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sentence\": \"test Deloitte google MICROSOFT Cloud\"\n}"
+				},
+				"url": {
+					"raw": "https://simple-api-e3515.firebaseapp.com/sentence",
+					"protocol": "https",
+					"host": [
+						"simple-api-e3515",
+						"firebaseapp",
+						"com"
+					],
+					"path": [
+						"sentence"
+					]
+				},
+				"description": "Sentence input containing multiple trademark terms"
+			},
+			"response": []
+		},
+		{
+			"name": "Single trademark word",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sentence\": \"test Deloitte test.\"\n}"
+				},
+				"url": {
+					"raw": "https://simple-api-e3515.firebaseapp.com/sentence",
+					"protocol": "https",
+					"host": [
+						"simple-api-e3515",
+						"firebaseapp",
+						"com"
+					],
+					"path": [
+						"sentence"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				},
+				"description": "APi request with a single trademark word"
+			},
+			"response": []
+		},
+		{
+			"name": "Single trademark word lower case",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sentence\": \"test google test.\"\n}"
+				},
+				"url": {
+					"raw": "https://simple-api-e3515.firebaseapp.com/sentence",
+					"protocol": "https",
+					"host": [
+						"simple-api-e3515",
+						"firebaseapp",
+						"com"
+					],
+					"path": [
+						"sentence"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				},
+				"description": "APi request with a single trademark word"
+			},
+			"response": []
+		},
+		{
+			"name": "Single trademark word upper case",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sentence\": \"test MICROSOFT test.\"\n}"
+				},
+				"url": {
+					"raw": "https://simple-api-e3515.firebaseapp.com/sentence",
+					"protocol": "https",
+					"host": [
+						"simple-api-e3515",
+						"firebaseapp",
+						"com"
+					],
+					"path": [
+						"sentence"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				},
+				"description": "APi request with a single trademark word"
+			},
+			"response": []
+		},
+		{
+			"name": "No trademark word",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sentence\": \"test sample API.\"\n}"
+				},
+				"url": {
+					"raw": "https://simple-api-e3515.firebaseapp.com/sentence",
+					"protocol": "https",
+					"host": [
+						"simple-api-e3515",
+						"firebaseapp",
+						"com"
+					],
+					"path": [
+						"sentence"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				},
+				"description": "APi request with a single trademark word"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
